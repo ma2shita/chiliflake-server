@@ -71,7 +71,9 @@ trap(:INT) {
   exit
 }
 trap(:USR1) {
-  STDERR.puts "counter: #{$generate_counter}" # logger `log writing failed. can't be called from trap context`
+  # logger `log writing failed. can't be called from trap context`
+  STDERR.puts "counter: #{$generate_counter}"
+  STDERR.puts "sequence: #{$flake.seq}"
 }
 sleep
 
