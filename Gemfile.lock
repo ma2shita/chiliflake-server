@@ -1,0 +1,25 @@
+GIT
+  remote: git://github.com/ma2shita/chiliflake.git
+  revision: b6a2f69df8ba3d96b92974db9eee6fcf0b3aa4bd
+  specs:
+    chiliflake (1.0.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    celluloid (0.16.0)
+      timers (~> 4.0.0)
+    celluloid-io (0.16.1)
+      celluloid (>= 0.16.0)
+      nio4r (>= 1.0.0)
+    hitimes (1.2.2)
+    nio4r (1.0.1)
+    timers (4.0.1)
+      hitimes
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  celluloid-io
+  chiliflake!
